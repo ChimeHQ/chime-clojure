@@ -5,7 +5,9 @@ A [Chime][chime] extension for Clojure.
 
 ## Overview
 
-This Chime extension supports the [Clojure][clojure] programming language. Still a work in progress.
+This Chime extension supports the [Clojure][clojure] programming language. It integrates [clojure-lsp][clojure-lsp] with [ChimeKit][chimekit]'s `ExtensionProtocol`.
+
+Still a work in progress.
 
 ## Suggestions or Feedback
 
@@ -17,4 +19,5 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 [license badge]: https://img.shields.io/github/license/ChimeHQ/chime-clojure
 [chime]: https://www.chimehq.com
 [clojure]: https://www.clojure.org
+[clojure-lsp]: https://clojure-lsp.io
 [chimekit]: https://github.com/ChimeHQ/ChimeKit
