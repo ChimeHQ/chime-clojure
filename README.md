@@ -9,6 +9,15 @@ This Chime extension supports the [Clojure][clojure] programming language. It in
 
 Still a work in progress.
 
+## Building
+
+- clone the repo
+- `cd chime-clojure`
+- `cp Projects/ExtensionContainer/User.xcconfig.template Projects/ExtensionContainer/User.xcconfig`
+- update `User.xcconfig` with your personal information
+- build/run with Xcode
+- Open Chime and activate the extension in Settings
+
 ## Suggestions or Feedback
 
 We'd love to hear from you! Get in touch via an issue a pull request.

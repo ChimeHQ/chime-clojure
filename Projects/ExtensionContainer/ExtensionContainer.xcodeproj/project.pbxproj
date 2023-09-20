@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9FD63CA2ABB0AE70086AB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD63C92ABB0AE70086AB51 /* AppDelegate.swift */; };
+		C9FD63CC2ABB0AE80086AB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FD63CB2ABB0AE80086AB51 /* Assets.xcassets */; };
+		C9FD63CF2ABB0AE80086AB51 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9FD63CD2ABB0AE80086AB51 /* MainMenu.xib */; };
+		C9FE83C52ABB29B600E58C16 /* Clojure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE83C42ABB29B600E58C16 /* Clojure.swift */; };
+		C9FE83CA2ABB29B600E58C16 /* Clojure.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C9FE83C22ABB29B600E58C16 /* Clojure.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9FE83D42ABB2AE100E58C16 /* ChimeClojure in Frameworks */ = {isa = PBXBuildFile; productRef = C9FE83D32ABB2AE100E58C16 /* ChimeClojure */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9FE83C82ABB29B600E58C16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FD63BE2ABB0AE70086AB51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9FE83C12ABB29B600E58C16;
+			remoteInfo = Clojure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9FE83CB2ABB29B600E58C16 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				C9FE83CA2ABB29B600E58C16 /* Clojure.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C9FD63C62ABB0AE70086AB51 /* ClojureExtensionContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClojureExtensionContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FD63C92ABB0AE70086AB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9FD63CB2ABB0AE80086AB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9FD63CE2ABB0AE80086AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9FD63D02ABB0AE80086AB51 /* ExtensionContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtensionContainer.entitlements; sourceTree = "<group>"; };
+		C9FD63D62ABB0B4F0086AB51 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		C9FD63D72ABB0C7B0086AB51 /* ExtensionContainer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ExtensionContainer.xcconfig; sourceTree = "<group>"; };
+		C9FE83C22ABB29B600E58C16 /* Clojure.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = Clojure.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FE83C42ABB29B600E58C16 /* Clojure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clojure.swift; sourceTree = "<group>"; };
+		C9FE83C62ABB29B600E58C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FE83C72ABB29B600E58C16 /* Clojure.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clojure.entitlements; sourceTree = "<group>"; };
+		C9FE83CF2ABB29C300E58C16 /* chime-clojure */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "chime-clojure"; path = ../..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9FD63C32ABB0AE70086AB51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FE83BF2ABB29B600E58C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FE83D42ABB2AE100E58C16 /* ChimeClojure in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9FD63BD2ABB0AE70086AB51 = {
+			isa = PBXGroup;
+			children = (
+				C9FE83CF2ABB29C300E58C16 /* chime-clojure */,
+				C9FD63D62ABB0B4F0086AB51 /* Project.xcconfig */,
+				C9FD63C82ABB0AE70086AB51 /* ExtensionContainer */,
+				C9FE83C32ABB29B600E58C16 /* Clojure */,
+				C9FD63C72ABB0AE70086AB51 /* Products */,
+				C9FE83D22ABB2AE100E58C16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FD63C72ABB0AE70086AB51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD63C62ABB0AE70086AB51 /* ClojureExtensionContainer.app */,
+				C9FE83C22ABB29B600E58C16 /* Clojure.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FD63C82ABB0AE70086AB51 /* ExtensionContainer */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD63C92ABB0AE70086AB51 /* AppDelegate.swift */,
+				C9FD63CB2ABB0AE80086AB51 /* Assets.xcassets */,
+				C9FD63CD2ABB0AE80086AB51 /* MainMenu.xib */,
+				C9FD63D02ABB0AE80086AB51 /* ExtensionContainer.entitlements */,
+				C9FD63D72ABB0C7B0086AB51 /* ExtensionContainer.xcconfig */,
+			);
+			path = ExtensionContainer;
+			sourceTree = "<group>";
+		};
+		C9FE83C32ABB29B600E58C16 /* Clojure */ = {
+			isa = PBXGroup;
+			children = (
+				C9FE83C42ABB29B600E58C16 /* Clojure.swift */,
+				C9FE83C62ABB29B600E58C16 /* Info.plist */,
+				C9FE83C72ABB29B600E58C16 /* Clojure.entitlements */,
+			);
+			path = Clojure;
+			sourceTree = "<group>";
+		};
+		C9FE83D22ABB2AE100E58C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9FD63C52ABB0AE70086AB51 /* ExtensionContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FD63D32ABB0AE80086AB51 /* Build configuration list for PBXNativeTarget "ExtensionContainer" */;
+			buildPhases = (
+				C9FD63C22ABB0AE70086AB51 /* Sources */,
+				C9FD63C32ABB0AE70086AB51 /* Frameworks */,
+				C9FD63C42ABB0AE70086AB51 /* Resources */,
+				C9FE83CB2ABB29B600E58C16 /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FE83C92ABB29B600E58C16 /* PBXTargetDependency */,
+			);
+			name = ExtensionContainer;
+			productName = ExtensionContainer;
+			productReference = C9FD63C62ABB0AE70086AB51 /* ClojureExtensionContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9FE83C12ABB29B600E58C16 /* Clojure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FE83CE2ABB29B600E58C16 /* Build configuration list for PBXNativeTarget "Clojure" */;
+			buildPhases = (
+				C9FE83BE2ABB29B600E58C16 /* Sources */,
+				C9FE83BF2ABB29B600E58C16 /* Frameworks */,
+				C9FE83C02ABB29B600E58C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FE83D12ABB2A1E00E58C16 /* PBXTargetDependency */,
+			);
+			name = Clojure;
+			packageProductDependencies = (
+				C9FE83D32ABB2AE100E58C16 /* ChimeClojure */,
+			);
+			productName = Clojure;
+			productReference = C9FE83C22ABB29B600E58C16 /* Clojure.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FD63BE2ABB0AE70086AB51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C9FD63C52ABB0AE70086AB51 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					C9FE83C12ABB29B600E58C16 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C9FD63C12ABB0AE70086AB51 /* Build configuration list for PBXProject "ExtensionContainer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9FD63BD2ABB0AE70086AB51;
+			productRefGroup = C9FD63C72ABB0AE70086AB51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9FD63C52ABB0AE70086AB51 /* ExtensionContainer */,
+				C9FE83C12ABB29B600E58C16 /* Clojure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9FD63C42ABB0AE70086AB51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD63CC2ABB0AE80086AB51 /* Assets.xcassets in Resources */,
+				C9FD63CF2ABB0AE80086AB51 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FE83C02ABB29B600E58C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9FD63C22ABB0AE70086AB51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD63CA2ABB0AE70086AB51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FE83BE2ABB29B600E58C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FE83C52ABB29B600E58C16 /* Clojure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9FE83C92ABB29B600E58C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9FE83C12ABB29B600E58C16 /* Clojure */;
+			targetProxy = C9FE83C82ABB29B600E58C16 /* PBXContainerItemProxy */;
+		};
+		C9FE83D12ABB2A1E00E58C16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = C9FE83D02ABB2A1E00E58C16 /* ChimeClojure */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9FD63CD2ABB0AE80086AB51 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FD63CE2ABB0AE80086AB51 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9FD63D12ABB0AE80086AB51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FD63D62ABB0B4F0086AB51 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9FD63D22ABB0AE80086AB51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FD63D62ABB0B4F0086AB51 /* Project.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C9FD63D42ABB0AE80086AB51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FD63D72ABB0C7B0086AB51 /* ExtensionContainer.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExtensionContainer/ExtensionContainer.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C9FD63D52ABB0AE80086AB51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FD63D72ABB0C7B0086AB51 /* ExtensionContainer.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ExtensionContainer/ExtensionContainer.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C9FE83CC2ABB29B600E58C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Clojure/Clojure.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clojure/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clojure;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chimehq.ClojureExtensionContainer.Clojure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C9FE83CD2ABB29B600E58C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Clojure/Clojure.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 77X93NZ3G2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clojure/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clojure;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chimehq.ClojureExtensionContainer.Clojure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9FD63C12ABB0AE70086AB51 /* Build configuration list for PBXProject "ExtensionContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FD63D12ABB0AE80086AB51 /* Debug */,
+				C9FD63D22ABB0AE80086AB51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FD63D32ABB0AE80086AB51 /* Build configuration list for PBXNativeTarget "ExtensionContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FD63D42ABB0AE80086AB51 /* Debug */,
+				C9FD63D52ABB0AE80086AB51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FE83CE2ABB29B600E58C16 /* Build configuration list for PBXNativeTarget "Clojure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FE83CC2ABB29B600E58C16 /* Debug */,
+				C9FE83CD2ABB29B600E58C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9FE83D02ABB2A1E00E58C16 /* ChimeClojure */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChimeClojure;
+		};
+		C9FE83D32ABB2AE100E58C16 /* ChimeClojure */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChimeClojure;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C9FD63BE2ABB0AE70086AB51 /* Project object */;
+}

@@ -1,0 +1,7 @@
+#include "User.xcconfig"
+
+MACOSX_DEPLOYMENT_TARGET = 13.0
+SWIFT_VERSION = 5.0
+SWIFT_STRICT_CONCURRENCY = complete
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = Apple Development
