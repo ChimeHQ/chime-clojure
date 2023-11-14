@@ -15,7 +15,8 @@ Still a work in progress.
 - `cd chime-clojure`
 - `cp Projects/ExtensionContainer/User.xcconfig.template Projects/ExtensionContainer/User.xcconfig`
 - update `User.xcconfig` with your personal information
-- build/run with Xcode
+- Open `Projects/ExtensionContainer` with Xcode
+- build/run
 - Open Chime and activate the extension in Settings
 
 ## Suggestions or Feedback
