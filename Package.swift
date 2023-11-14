@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-	name: "chime-swift",
+	name: "chime-clojure",
 	platforms: [.macOS(.v11)],
 	products: [
 		.library(name: "ChimeClojure", targets: ["ChimeClojure"]),
