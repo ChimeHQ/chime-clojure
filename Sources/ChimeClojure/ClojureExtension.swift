@@ -7,8 +7,10 @@ public final class ClojureExtension {
 	private let lspService: LSPService
 
 	public init(host: any HostProtocol) {
-		self.lspService = LSPService(host: host,
-									 executableName: "clojure-lsp")
+		self.lspService = LSPService(
+			host: host,
+			executableName: "clojure-lsp"
+		)
 	}
 }
 
@@ -17,7 +19,7 @@ extension ClojureExtension: ExtensionProtocol {
 		ExtensionConfiguration(contentFilter: [.uti(.clojureSource)])
 	}
 
-	public var applicationService: ApplicationService {
-		return lspService
+	public var applicationService: some ApplicationService {
+		lspService
 	}
 }
